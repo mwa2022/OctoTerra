@@ -1,0 +1,4 @@
+variable "tblname" {
+    type = string
+}
+

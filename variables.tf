@@ -16,4 +16,8 @@ variable "octopus_address" {
 	    type = string
 	}
 
+variable "octopus_space_id" {
+    type = string
+}
+
 

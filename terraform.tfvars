@@ -1,4 +1,4 @@
-serverURL       = "https://taaoctodeploy.wolterskluwer.com"
+serverURL       = "https://taaoctodeploy.wolterskluwer.com/"
 apiKey          = "API-ZPZKG9JDI2E99VCY2ADIWRMPLZIJLYW"
 space           = "Spaces-162"
 variableSetName = "MikeWTest Variable Set"

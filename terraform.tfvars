@@ -1,5 +1,5 @@
 serverURL       = "https://taaoctodeploy.wolterskluwer.com"
 apiKey          = "API-ZPZKG9JDI2E99VCY2ADIWRMPLZIJLYW"
 space           = "Spaces-162"
-variableSetName = "AWS configuration values"
-description     = "Collection of common AWS config values for automated deployment and runbook processes."
+variableSetName = "MikeWTest Variable Set"
+description     = "Test"

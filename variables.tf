@@ -1,23 +1,19 @@
-variable "octopus_tblname" {
+variable "apiKey" {
     type = string
 }
 
-variable "octopus_address" {
-	    type = string
-	}
-	
-
-	variable "octopus_api_key" {
-	    type = string
-	}
-	
-
-	variable "octopus_space_id" {
-	    type = string
-	}
-
-variable "octopus_space_id" {
+variable "space" {
     type = string
 }
 
+variable "serverURL" {
+    type = string
+}
 
+variable "variableSetName" {
+    type = string
+}
+
+variable "description" {
+    type = string
+}

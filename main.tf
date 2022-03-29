@@ -1,31 +1,19 @@
-##################################################################################
-# PROVIDERS
-##################################################################################
-
-
 terraform {
-	  required_providers {
-	    octopusdeploy = {
-	      source = "OctopusDeployLabs/octopusdeploy"
-	      version = ">= 0.7.64" # example: 0.7.62
-	    }
-	  }
-	
-
-	  backend "s3" { }
-	}
-	
-
-	provider "octopusdeploy" {
-	  # configuration options
-	  address    = var.octopus_address
-	  api_key    = var.octopus_api_key
-	  space_id   = var.octopus_space_id
-	}
-
-data "octopusdeploy_space" "space" {
-  provider = octopusdeploy
-  name     = "SandBox"
+  required_providers {
+    octopusdeploy = {
+      source  = "OctopusDeployLabs/octopusdeploy"
+    }
+  }
 }
 
+provider "octopusdeploy" {
+  address  = var.serverURL
+  api_key   = var.apiKey
+  space_id = var.space
+}
+
+resource "octopusdeploy_library_variable_set" "newvariableset" {
+  description = var.description
+  name        = var.variableSetName
+}
 
